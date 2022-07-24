@@ -1,0 +1,7 @@
+@use "css/index/index";
+
+nav{
+    ul{
+        @include index.fontStyles;
+    }
+}

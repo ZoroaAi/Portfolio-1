@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// Mixins:
+@mixin fontStyles{
+    color: $textColour;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+
+}
+
+// Colours:
+$backgroundColour: #17181F;
+$textColour: #EEEDF0;
+$accent: #6C72CB;
+$contrast: #CB69C1;
+
+body{
+    background-color: #17181F;
+}
+
