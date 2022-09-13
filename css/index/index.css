@@ -5,4 +5,17 @@
 
 body {
   background-color: #17181F;
+  color: #EEEDF0;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
+}
+
+.introContainer {
+  height: 100vh;
+  width: 100%;
+}
+.introContainer .introText {
+  height: 100px;
+  width: 50vw;
+  display: grid;
 }/*# sourceMappingURL=index.css.map */

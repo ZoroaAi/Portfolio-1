@@ -19,5 +19,17 @@ $contrast: #CB69C1;
 
 body{
     background-color: #17181F;
+    @include fontStyles();
 }
 
+.introContainer{
+    height: 100vh;
+    width: 100%;
+
+    .introText{
+        height: 100px;
+        width: 50vw;
+        display: grid;
+        // grid-template-columns: ;
+    }
+}
