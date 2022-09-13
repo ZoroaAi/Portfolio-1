@@ -1,7 +1,14 @@
-@use "css/index/index";
+@use "../index/index";
 
 nav{
+    display: flex;
+    justify-content: space-between;
+    
     ul{
-        @include index.fontStyles;
+        margin: 10px;
+        a{
+            text-decoration: none;
+            @include index.fontStyles;
+        }
     }
 }

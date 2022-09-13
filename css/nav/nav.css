@@ -1,1 +1,22 @@
-/*# sourceMappingURL=nav.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #17181F;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  margin: 10px;
+}
+nav ul a {
+  text-decoration: none;
+  color: #EEEDF0;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=nav.css.map */
