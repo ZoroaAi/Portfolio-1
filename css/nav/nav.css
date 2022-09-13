@@ -8,15 +8,36 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  position: relative;
 }
-nav ul {
+nav .nav-logo {
+  display: inline;
+}
+nav .nav-logo img {
+  display: inline-block;
+  padding: 10px;
+}
+nav .hamburger {
+  display: none;
+}
+nav .nav-links {
   margin: 10px;
+  margin-top: 20px;
+  list-style-type: none;
+  display: inline;
+  float: right;
 }
-nav ul a {
+nav .nav-links li {
+  display: inline-block;
+}
+nav .nav-links a {
+  padding: 0 25px;
   text-decoration: none;
   color: #EEEDF0;
   font-size: 1em;
   font-family: "Inter", sans-serif;
+}
+nav .nav-links a:hover {
+  color: #6C72CB;
 }/*# sourceMappingURL=nav.css.map */

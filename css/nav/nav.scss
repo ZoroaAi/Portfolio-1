@@ -1,14 +1,40 @@
 @use "../index/index";
 
 nav{
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    position: relative;
     
-    ul{
+    .nav-logo{
+        display: inline;
+        img{
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .nav-links{
         margin: 10px;
+        margin-top: 20px;
+        list-style-type: none;
+
+        display: inline;
+        float: right;
+
+        li{
+            display: inline-block;
+        }
         a{
+            padding: 0 25px;
             text-decoration: none;
             @include index.fontStyles;
+
+            &:hover{
+                color: index.$accent;
+            }
         }
     }
 }
