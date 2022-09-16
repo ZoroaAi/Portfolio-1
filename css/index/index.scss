@@ -23,13 +23,39 @@ body{
 }
 
 .introContainer{
-    height: 100vh;
-    width: 100%;
-
+    padding: 12em 6em;
     .introText{
         height: 100px;
         width: 50vw;
         display: grid;
-        // grid-template-columns: ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 24px 32px 32px 18px;
+        grid-gap: 5px;
+
+        grid-template-areas: 
+            "h h h"
+            "s s s"
+            "n p p"
+            "m m m"
+        ;
+
+        .hello{grid-area: h;}
+        .generalTxt{grid-area: m;}
+        span{
+            size: 20px;
+            color: $accent;
+        }
+        .name{
+            grid-area: s;
+            color: $accent;
+            font-size: 2em;
+            font-weight: 600;
+            text-align: left;
+        }
+        .myPortfolio{
+            grid-area: n;
+            .pofo{grid-area: p;}
+        }
+
     }
 }
