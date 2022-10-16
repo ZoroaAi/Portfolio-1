@@ -11,11 +11,11 @@ body {
 }
 
 .introContainer {
-  padding: 12em 6em;
+  position: relative;
 }
 .introContainer .introText {
-  height: 100px;
-  width: 50vw;
+  position: absolute;
+  transform: translate(5vw, 27vh);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 24px 32px 32px 18px;

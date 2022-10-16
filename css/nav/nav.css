@@ -10,14 +10,37 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.introContainer {
-  height: 100vh;
-  width: 100%;
-}
 .introContainer .introText {
   height: 100px;
   width: 50vw;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 24px 32px 32px 18px;
+  grid-gap: 5px;
+  grid-template-areas: "h h h" "s s s" "n p p" "m m m";
+}
+.introContainer .introText .hello {
+  grid-area: h;
+}
+.introContainer .introText .generalTxt {
+  grid-area: m;
+}
+.introContainer .introText span {
+  size: 20px;
+  color: #6C72CB;
+}
+.introContainer .introText .name {
+  grid-area: s;
+  color: #6C72CB;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+}
+.introContainer .introText .myPortfolio {
+  grid-area: n;
+}
+.introContainer .introText .myPortfolio .pofo {
+  grid-area: p;
 }
 
 nav {
